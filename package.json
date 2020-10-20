@@ -1,7 +1,7 @@
 {
   "name": "to_do_app_backend",
   "version": "1.0.0",
-  "description": "API REST To do app",
+  "description": "Backend for To Do App",
   "main": "index.js",
   "scripts": {
     "dev": "DEBUG=app:* nodemon index",
@@ -38,7 +38,7 @@
   },
   "lint-staged": {
     "*.js": [
-      "eslint --cache --fix",
+      "eslint --fix",
       "git add"
     ]
   }
