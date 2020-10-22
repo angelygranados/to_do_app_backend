@@ -18,6 +18,18 @@ function usersTasksApi(app) {
       next(err);
     }
   });
+  router.get("/task/:taskId", async function (req, res, next) {
+    const { taskId } = req.params;
+    try {
+      const task = await userTasksService.getSingleTasks({ taskId });
+      res.status(200).json({
+        data: task,
+        message: "single tasks retrieved",
+      });
+    } catch (err) {
+      next(err);
+    }
+  });
   router.get("/:userId", async function (req, res, next) {
     const { userId } = req.params;
     try {

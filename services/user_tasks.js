@@ -9,6 +9,10 @@ class userTasksService {
     const tasks = await this.mongoDB.getAll(this.collection);
     return tasks || [];
   }
+  async getSingleTasks({ taskId }) {
+    const singleTask = await this.mongoDB.get(this.collection, taskId);
+    return singleTask || {};
+  }
   async getUserTasks({ userId }) {
     const userTasks = await this.mongoDB.getAllByUser(this.collection, userId);
     return userTasks || [];
