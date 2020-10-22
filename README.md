@@ -10,6 +10,12 @@ Web app that allows the user **_create_**, **_edit_** and **_delete_** users and
 
 ![Tasks view](ipad-view.PNG)
 
+<br>
+
+## Architecture Diagram
+
+![Architecture Diagram](architecture-diagram.jpeg)
+
 ## Available Scripts
 
 In the project backend directory, you can run:
